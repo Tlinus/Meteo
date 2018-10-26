@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meteo</title>
+	<meta charset="utf-8" >
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="slider.js"></script>
+
+	<script type="text/javascript" src="xhr.js"></script>
+	<script type="text/javascript">
+	document.addEventListener( "DOMContentLoaded", function() {
+		var rech = document.getElementById("rechercher");
+		rech.addEventListener( "click", function( e ) {
+			getData();
+		});
+		document.getElementById('city').onkeypress = function(e){
+		    if (!e) e = window.event;
+		    var keyCode = e.keyCode || e.which;
+		    if (keyCode == '13'){
+		      getData();
+		    }
+		  }
+	});
+	</script>
+</head>
+<body>
+	<nav class="navbar-dark bg-dark">
+		<input type="text" name="city" id="city">
+		<input type="submit" name="submit" id="rechercher" value="Rechercher">
+	</nav>
+	
+
+	<div id="demo">
+		
+	</div>
+</body>
+</html>
