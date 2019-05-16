@@ -13,31 +13,31 @@ function getData(){
 	            html += "<div id='slider-nav'> ";
 	            for (j = 0; j<5; j++){
 		            switch (json['fcst_day_'+j].date.substring(3,5)) {
-					  case '01.':
+					  case '01':
 					    month = "Janvier";
 					    break;
-					  case '02.':
+					  case '02':
 					    month = "Fevrier";
 					    break;
-					  case '03.':
+					  case '03':
 					    month = "Mars";
 					    break;
-					  case '04.':
+					  case '04':
 					    month = "avril";
 					    break;
-					  case '05.':
+					  case '05':
 					    month = "mai";
 					    break;
-					  case '06.':
+					  case '06':
 					    month = "juin";
 					    break;
-					  case '07.':
+					  case '07':
 					    month = "juillet";
 					    break;
-					   case '08.':
+					   case '08':
 					    month = "août";
 					    break;
-					   case '09.':
+					   case '09':
 					    month = "septembre";
 					    break;
 					   case '10':
